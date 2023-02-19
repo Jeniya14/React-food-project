@@ -1,0 +1,65 @@
+
+.register-main, .login-main{
+
+    width: 450px;
+    display: flex;
+   position: absolute;
+   left:35%;
+    flex-flow: column;
+    margin-top: 60px;
+    justify-self: center;
+    padding: 50px;
+    background-color: rgba(253, 254, 254, 0.9);
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px black;
+}
+.errP{
+    align-self: center;
+    color: red;
+    margin-top: 10px;
+}
+.register-main p, .login-main p{
+    line-height: 6px;
+    font-size: 18px;
+
+}
+.register-main h1, .login-main h1{
+    align-self: center;
+}
+.register-main input, .login-main input{
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    background-color: transparent;
+    outline-style: none;
+    color: dimgrey;
+
+}
+input:focus{
+    border-color: rgb(168, 82, 22);
+    caret-color: chocolate ;
+}
+.register-main button, .login-main button{
+    margin: 20px 0px !important;
+    height: 40px;
+    width: 100px;
+    align-self: center;
+    border: none;
+    background-color: rgb(11, 169, 11);
+    color: white;
+    
+}
+.register-main button:hover, .login-main button:hover{
+    box-shadow: 2px 3px 5px black;
+    background-color: rgb(3, 149, 3);
+}
+.login-body, .register-body{
+    background-image: url(../Dashboard/image/jeni.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 806px;
+    margin-top: -61px;
+    padding-top: 132px;
+}

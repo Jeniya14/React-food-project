@@ -1,0 +1,127 @@
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px 0px;
+    margin-bottom: 10px;
+
+}
+.home{
+  position: relative;
+}
+.bg{
+    background-image: url(../image/jeni1.jpg);
+    position: relative;
+    height: 747px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    margin-bottom: -10px;
+  }
+.main-slice{
+  width: 1250px;
+  height: 591px;
+  margin: 10px auto 0px auto;
+}
+.slice{
+    height: 600px;
+    border-radius: 10px;
+  }
+
+.logo{
+    width: 100px;
+    height: 60px;
+    margin-right: 150px;
+}
+.search-input{
+    width: 600px;
+    height: 44px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline-style: none;
+    border:none
+}
+.search-input+button{
+    height: 45px;
+    width: 130PX;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -2px;
+    border: none;
+    margin-right: 60px;
+    background-color: rgba(255, 127, 9,0.9);
+    color: #fff;
+
+}
+.cart-button{
+    height: 50px;
+    width: 80px;
+    background-color:rgba(75,105,45,0.7);
+    border: none;
+    border-radius: 50px;
+}
+
+.cart-button img{
+    width: 30px;
+    height: 30px;
+}
+
+/* slider Css */
+
+.sliderstyle{
+    height: 100%;
+    position:relative;
+}
+
+.leftArrowStyles  {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left : 32px;
+    font-size: 35px;
+    z-index: 1;
+    cursor: pointer;
+    color: rgb(255, 255, 255,0.8);
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgba(156, 154, 154, 0.8);
+    text-align: center;
+    height: 59px;
+  }
+  .leftArrowStyles:hover{
+    background-color: rgba(100, 98, 98, 0.8);
+  }
+.rightArrowStyles  {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right : 32px;
+    font-size: 35px;
+    z-index: 1;
+    cursor: pointer;
+    color: rgb(255, 255, 255,0.8);
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgba(156, 154, 154, 0.8);
+    text-align: center;
+    height: 59px;
+  }
+  .rightArrowStyles:hover{
+    background-color: rgba(100, 98, 98, 0.8);
+  }
+.dotsContainerStyles{
+    display: flex;
+    justify-content: center;
+
+  }
+.dotStyle{
+    margin: 0 3px;
+    cursor: pointer; 
+    font-size: 20px;
+    color:#fff;
+  
+  }
+.dotStyle:hover{
+    color:#070707; 
+}
+

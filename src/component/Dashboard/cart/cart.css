@@ -1,0 +1,12 @@
+.cart-bg{
+    background-image: url(../image/jeni1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 806px;
+}
+.cart{
+    height: 420px;
+    color: white;
+}

@@ -1,0 +1,23 @@
+.footer{
+    height: 250px;
+    background-color: rgb(26, 25, 25);
+    color: white;
+  
+    width: 100%;
+    display: block;
+}
+.footer-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flogo{
+    width: 100px;
+    height: 60px;
+    margin:30px 180px;
+}
+.footer p{
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    padding: 10px;
+}
