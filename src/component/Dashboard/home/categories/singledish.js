@@ -1,31 +1,41 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
-import Food1 from "../../../foodimage";
+import Food from "../../../foodimage";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../../header/header";
 import Footer from "../../footer/footer";
 import '../categories/categories.css'
+import { useDispatch,useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { addTocart, getTotals } from "../../cart/cartslice";
+
 function Singledish(){
+    const dispatch=useDispatch()
     const location=useLocation();
+    const history=useHistory()
     const [detail,setdetail]=useState({})
     useEffect(()=>{
-        let data = Food1.filter((ele)=>ele.id==query.get('id'));
+        let data = Food.filter((ele)=>ele.id==query.get('id'));
         console.log(data)
         setdetail(data[0])
     },[])
+    const cart=useSelector((state)=>state.cart)
+    useEffect(()=>{
+        
+        dispatch(getTotals())
+    },[cart,dispatch])
+    function AddtoCart(detail){
+        dispatch(addTocart(detail))
+    }
     let query = new URLSearchParams(location.search)
-    const history =useHistory()
-    function backToHome(){
-        history.push('/home')
+    function order(){
+        history.push('/cart')
     }
     return(
         <>
         <div className="sfp-bg">
         <Header />
-        <button className="backHome" onClick={backToHome}>
-          <span style={{fontSize:'20px',paddingRight:'5px'}}>←</span>  Home
-        </button>
+        
         <div className="sfp-main">
             <div className="sfp-first">
                 <img src={detail.url}></img><br />
@@ -39,8 +49,8 @@ function Singledish(){
             <p><span >Description:</span><br />{detail.description}</p>
             <div><span>Available Only At :</span><p>9am to 9pm</p></div>
             <br />
-            <button> + Add to Cart</button>
-            <button style={{marginLeft:'20px'}}>Order</button>
+            <button onClick={()=>AddtoCart(detail)}> + Add to Cart</button>
+            <button style={{marginLeft:'20px'}} onClick={order}>Order</button>
             </div>
         </div>
         <Footer />

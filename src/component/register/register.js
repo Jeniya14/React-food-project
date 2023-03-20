@@ -11,6 +11,12 @@ function Register(){
         if((username.trim().length===0)||(password.trim().length===0)||(email.trim().length===0)){
                 setnameErr(true)
         }
+        else if(!email.includes('@','.','com')){
+            alert('please Enter valid email address')
+        }
+        else if(password.length<5){
+            alert('please enter the password more than five characters')
+        }
         else{
             setnameErr(false)
             const array =[{username:username,email:email,password:password}]

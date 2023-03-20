@@ -3,10 +3,96 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
-    height: 806px;
+    height: 100%;
 }
 .cart{
-    height: 420px;
+background-color: rgba(210, 239, 213, 0.9);
+    color:black;
+    margin:10px 60px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.cart-main{
+ padding: 10px;
+}
+.cart-main-head{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+    padding: 15px;
+
+}
+.cart-main-head-h3{
+    width: 300px;
+    
+}
+.cart-main-head-h3~h3{
+    width: 85px;
+}
+.cart-main-body{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+   margin:10px;
+   border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 2px 5px black;
+}
+.cart-main-body-div{
+    width: 350px;
+    display: flex;
+}
+.cart-main-body-div button{
+    border: 1px solid chocolate;
+    background-color: transparent;
+    border-radius: 10px;
+    color: chocolate;
+}
+.cart-main-body-div button:hover{
+ background-color: chocolate;
+ color: white;
+ box-shadow: 2px 3px 4px black;
+}
+.cart-main-body-div2{
+    width: 100px;
+}
+.cart-main-body img{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+.cart-main-body img:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
+.cart-main-body-h3{
+   width: 200px;
+}
+.quantity button{
+ border: none;
+ width: 24px;
+}
+.clearCart-button{
+    padding: 5px;
+    border: 1px solid rgb(182, 104, 21);
+   
+    border-radius: 5px;
+}
+.Order-button{
+    width: 117px;
+    height: 34px;
+    border: none;
+    background-color: rgba(37, 136, 62, 0.671);
     color: white;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+.Order-button:hover{
+    box-shadow: 2px 2px 5px black;
+    
+}
+.Order-button:active{
+    background-color: chocolate;
 }

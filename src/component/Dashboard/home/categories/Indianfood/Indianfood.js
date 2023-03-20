@@ -1,18 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import '../categories.css';
-import Food1 from "../../../../foodimage";
+import Food from "../../../../foodimage";
 import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addTocart } from "../../../cart/cartslice";
+import '../../../header/header.css'
 function Indianfood(){
-    const [quantity,setquantity]=useState(1)
+    const dispatch=useDispatch()
+    let Food1=Food.filter((ele)=>ele.titlename==='IndianFood');
     let history=useHistory();
-    function decree(){
-        setquantity(quantity-1)
-    }
-    function incree(){
-        setquantity(quantity+1)
-    }
-    function AddtoCart(){
-        history.push('/cart')
+    
+    function AddtoCart(ele){
+        dispatch(addTocart(ele))
     }
     function prevImage(){
         let box=document.querySelector('.card-image')
@@ -27,29 +26,36 @@ function Indianfood(){
     function detail(id){
         history.push(`/singledish?id=${id}`)
     }
+    function Alldish(titleId){
+        history.push(`/alldish?id=${titleId}`)
+    }
+    function order(){
+        history.push('/cart')
+    }
     return(
         <div className="indi-css">
-             <h2>Categories</h2>
-             <h3>Indian Food</h3>
+             {/* <h2>Categories</h2> */}
+             <h3 >Indian Food</h3>
+            
         <div className="main-image">
         <button className="leftImageArrowStyles" onClick={()=>prevImage()}> ❰❰</button>
             <button className="rightImageArrowStyles" onClick={()=>nextImage()}> ❱❱</button>
         <div className="card-image" >
-            {
+            {  
                 Food1.map((ele)=>{
-                    return <div key={ele.id} className='Perslide' >
+                    return <>
+                     <div key={ele.id} className='Perslide'>
                     <img src={ele.url} alt={ele.title} onClick={()=>detail(ele.id)}></img>
-                    <p>{ele.title}{' '}[{ele.quantity}] <button className="quantity-button" onClick={(e)=>decree(e.target.value)}>-</button>{quantity}<button className="quantity-button" onClick={(e)=>incree(e.target.value)}>+</button>
-                    </p>
-                    
+                    <p>{ele.title}{' '}[{ele.quantity}] </p>
                     <span style={{display:'block'}}>₹{ele.rate}</span>
-                    <button className="slide-cart-button" >Order</button>{'  '}<button className="slide-cart-button" onClick={AddtoCart}>Add toCart</button>
+                    <button className="slide-cart-button" onClick={order}>Order</button>{'  '}<button className="slide-cart-button" onClick={()=>AddtoCart(ele)}>+Add toCart</button>
                 </div>
+                 </>
                 })
             }
-           <a href="#" style={{textDecoration:'none',color
-        :'black'}}>See more...</a>
+            <button onClick={()=>Alldish(Food1[0].titleId) } className='imsa' >See more</button>
         </div>
+        
         </div>
         
         </div>

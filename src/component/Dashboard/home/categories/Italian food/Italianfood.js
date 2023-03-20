@@ -1,44 +1,13 @@
 import React from "react";
 import '../categories.css'
+import Food from "../../../../foodimage";
+import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addTocart } from "../../../cart/cartslice";
 function Italianfood(){
-    const food2=[
-        {id:2.1,
-            url:'http://localhost:3000/image/italifood-1.jpg',
-            rate:'300',
-            title:'Spaghetti',
-            quantity:'2 pieces',
-            star:4.5},
-        {id:2.2,
-            url:'http://localhost:3000/image/italifood-2.jpg',
-            rate:'250',
-            title:'Lasagna',
-            quantity:'1 Serve',
-            star:4.5},
-        {id:2.3,
-            url:'http://localhost:3000/image/italifood-3.jpg',
-            rate:'500',
-            title:' Risotto milanese',
-            quantity:'1 serve',
-            star:5},
-        {id:2.4,
-                url:'http://localhost:3000/image/italifood-4.jpg',
-                rate:'700',
-                title:'Ratatouille',
-                quantity:'2 serve',
-                star:4.5},
-        {id:2.5,
-                 url:'http://localhost:3000/image/italifood-5.jpg',
-                rate:'200',
-                title:'Tiramisu',
-                quantity:'1 serve',
-                star:4.5},
-        {id:2.6,
-                url:'http://localhost:3000/image/italifood-6.jpg',
-                rate:'439',
-                title:'Frittata',
-                quantity:'2 serve',
-                star:4.5},]
-            
+    const dispatch=useDispatch()
+    let Food2=Food.filter((ele)=>ele.titlename==='ItalianFood')
+    let history=useHistory();
     function prevImage(){
         let box=document.querySelector('.itali-card-image')
         let width = box.clientWidth;
@@ -49,24 +18,43 @@ function Italianfood(){
         let width=box.clientWidth;
         box.scrollLeft=box.scrollLeft+width;
     }
+    function detailed(id){
+        history.push(`/singledish?id=${id}`)
+    }
+    function Alldish(titleId){
+        history.push(`/alldish?id=${titleId}`)
+    }
+    function AddtoCart(ele){
+        dispatch(addTocart(ele))
+    }
+    function order(){
+        history.push('/cart')
+    }
     return(
         <div className="indi-css">
             <h3>Italian Food</h3>
             <div className="main-image">
+                
         <button className="leftImageArrowStyles" onClick={()=>prevImage()}> ❰❰ </button>
+
             <button className="rightImageArrowStyles" onClick={()=>nextImage()}> ❱❱</button>
         <div className="itali-card-image" >
             {
-                food2.map((ele)=>{
+                Food2.map((ele)=>{
                     return <div key={ele.id} className='Perslide'>
-                    <img src={ele.url} alt={ele.title}></img>
+                    <img src={ele.url} alt={ele.title} onClick={()=>detailed(ele.id)}></img>
+
                     <p>{ele.title}{' '}[{ele.quantity}]</p>
+
                     <span style={{display:'block'}}>₹{ele.rate}</span>
-                    <button className="slide-cart-button">Order</button>{'  '}<button className="slide-cart-button">Add toCart</button>
+
+                    <button className="slide-cart-button" onClick={order}>Order</button>{'  '}
+                    
+                    <button className="slide-cart-button" onClick={()=>AddtoCart(ele)}>+Add toCart</button>
                 </div>
                 })
             }
-    <a href="#">See more</a>
+    <button onClick={()=>Alldish(Food2[0].titleId) } className='imsa' >See more</button>
         </div>
         </div>
         </div>

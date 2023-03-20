@@ -1,27 +1,57 @@
 .header{
     display: flex;
     justify-content: space-evenly;
-    padding:20px 0px;
+    padding:20px 0px 5px 0px;
     margin-bottom: 10px;
-
+    background-color:rgba(0, 0, 0, 0.926) ;
+    position: sticky;
+    top:0;
+    z-index: 999;
+  }
+.categories{
+  /* background-image: url(../image/category.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+padding-top: 30px; */
+background-color:rgba(244, 158, 0, 0.6);
+padding-top: 30px;
+box-shadow: 0px 10px 30px black;
 }
 .home{
   position: relative;
+  margin: 0;
+}
+.msg{
+  background-color: rgba(255, 127, 9,0.9);
+  color: white;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -15px;
+  border-radius: 10px;
+  text-align: center;
 }
 .bg{
     background-image: url(../image/jeni1.jpg);
     position: relative;
-    height: 747px;
+    height: 765px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     margin-bottom: -10px;
+    margin-top: -112px;
+    box-shadow: 0px 0px 10px black;
   }
 .main-slice{
   width: 1250px;
-  height: 591px;
-  margin: 10px auto 0px auto;
+  height: 830px;
+  margin: 20px auto 0px auto;
+  padding: 130px 0px;
 }
 .slice{
     height: 600px;
@@ -32,6 +62,8 @@
     width: 100px;
     height: 60px;
     margin-right: 150px;
+    margin-top: -15px;
+    padding: 2px;
 }
 .search-input{
     width: 600px;
@@ -39,7 +71,8 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     outline-style: none;
-    border:none
+    border:none;
+    padding: 20px;
 }
 .search-input+button{
     height: 45px;
@@ -60,7 +93,9 @@
     border: none;
     border-radius: 50px;
 }
-
+.cart-button:hover{
+  background-color:#4b692d;
+}
 .cart-button img{
     width: 30px;
     height: 30px;

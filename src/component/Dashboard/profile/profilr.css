@@ -1,0 +1,92 @@
+.progile-bg{
+    background-image: url(../image/profilebg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.imge{
+    width: 250px;
+    height: 260px;
+    display: block;
+    margin-left: 200px
+}
+.profile-main{
+    background-color: rgba(255, 255, 255, 0.905);
+    padding: 30px 80px;
+    border-radius: 10px;
+    width: 859px;
+    margin:50px 300px;
+    height: 100%;
+
+}
+.profile-main label{
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+.profile-main p{
+    display: inline-block;
+    padding: 10px;
+    color: green;
+    background-color: rgba(216, 214, 214,0.5);
+    width: 400px;
+   
+}
+textarea{
+   border: none;
+   background-color: rgba(216, 214, 214,0.5);
+   outline: none;
+}
+.btne{
+    color: white;
+    background-color: rgba(26, 112, 26, 0.689);
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.profile-ul{
+    list-style-type: none;
+    padding-inline-start: 1px;
+}
+.profile-li{
+    background-color: rgb(246, 233, 217);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    width: 425px;
+    word-wrap: break-word;  
+    position: relative;
+    height: 100%;
+}
+.profile-li button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    border:none;
+    color: red;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    padding-bottom: 35px;
+
+}
+.profile-li button:hover{
+    background-color:rgba(246, 1, 1, 0.575);
+    color: white;
+}
+.savebutton{
+    color: white;
+    background-color: rgb(232, 117, 10);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 80px;
+    width: 118px;
+    font-weight: 500;
+}

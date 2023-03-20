@@ -1,5 +1,5 @@
 .footer{
-    height: 250px;
+    height: 300px;
     background-color: rgb(26, 25, 25);
     color: white;
   
@@ -20,4 +20,31 @@
     text-align: center;
     background-color: rgb(41, 41, 41);
     padding: 10px;
+}
+.footer h4{
+    padding-bottom: 2px;
+}
+.footer ul{
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+.footer li{
+    color:grey;
+    padding-bottom: 10px ;
+    cursor: pointer;
+}
+.footer li:hover,.linkto:hover{
+  text-decoration: underline;
+  color: grey;
+}
+.footerimg{
+    width: 30px;
+    height:30px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+.linkto{
+    text-decoration: none;
+    color: grey;
 }
