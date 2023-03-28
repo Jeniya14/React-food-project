@@ -1,10 +1,8 @@
-import image from '../component/Dashboard/foodimages/Indfood-1.jpg'
+
 const Food=[
     {
         id:1,
-        url:'http://localhost:3000/image/Indfood-1.jpg',
-        // url:'../component/Dashboard/foodimages/Indfood-1.jpg',
-        // url:{image},
+        url:require("../component/Dashboard/image/Indfood-1.jpg"),
         rate:'50',
         title:'Idly',
         quantity:'2 pieces',
@@ -15,7 +13,7 @@ const Food=[
     },
     {
         id:2,
-        url:'http://localhost:3000/image/Indfood-2.jpg',
+        url:require("../component/Dashboard/image/Indfood-2.jpg"),
         rate:'100',
         title:'Dosa',
         quantity:'2 pieces',
@@ -27,7 +25,7 @@ const Food=[
     },
     {
         id:3,
-        url:'http://localhost:3000/image/Indfood-3.jpg',
+        url:require("../component/Dashboard/image/Indfood-3.jpg"),
         rate:'100',
         title:'Puri',
         quantity:'2 pieces',
@@ -38,7 +36,7 @@ const Food=[
     },
     {
         id:4,
-        url:'http://localhost:3000/image/Indfood-4.jpg',
+        url:require("../component/Dashboard/image/Indfood-4.jpg"),
         rate:'100',
         title:'Upma',
         quantity:'1 Serve',
@@ -49,7 +47,7 @@ const Food=[
     },
     {
         id:5,
-        url:'http://localhost:3000/image/Indfood-5.jpg',
+        url:require("../component/Dashboard/image/Indfood-5.jpg"),
         rate:'100',
         title:'Chappathi',
         quantity:'2 pieces',
@@ -60,7 +58,7 @@ const Food=[
     },
     {
         id:6,
-        url:'http://localhost:3000/image/Indfood-6.jpg',
+        url:require("../component/Dashboard/image/Indfood-6.jpg"),
         rate:'100',
         title:'Biriyani',
         quantity:'1 Serve',
@@ -71,7 +69,7 @@ const Food=[
     },
     {
         id:7,
-        url:'http://localhost:3000/image/Indfood-7.jpg',
+        url:require("../component/Dashboard/image/Indfood-7.jpg"),
         rate:'100',
         title:'Fish fry',
         quantity:'2 pieces',
@@ -84,7 +82,7 @@ const Food=[
     },
     {
         id:8,
-        url:'http://localhost:3000/image/Indfood-8.jpg',
+        url:require("../component/Dashboard/image/Indfood-8.jpg"),
         rate:'100',
         title:'Crab',
         quantity:'2 pieces',
@@ -95,7 +93,7 @@ const Food=[
     },
     {
         id:9,
-        url:'http://localhost:3000/image/Indfood-9.jpg',
+        url:require("../component/Dashboard/image/Indfood-9.jpg"),
         rate:'100',
         title:'Prawn',
         quantity:'6 pieces',
@@ -106,7 +104,7 @@ const Food=[
     },
     {
         id:10,
-        url:'http://localhost:3000/image/Indfood-10.jpg',
+        url:require("../component/Dashboard/image/Indfood-10.jpg"),
         rate:'100',
         title:'Pav baaji',
         quantity:'2 pieces',
@@ -117,7 +115,7 @@ const Food=[
     },
     {
         id:11,
-        url:'http://localhost:3000/image/Indfood-11.png',
+        url:require("../component/Dashboard/image/Indfood-11.png"),
         rate:'100',
         title:'Parotta',
         quantity:'3 pieces',
@@ -128,7 +126,7 @@ const Food=[
     },
     {
         id:12,
-        url:'http://localhost:3000/image/Indfood-12.png',
+        url:require("../component/Dashboard/image/indfood-12.png"),
         rate:'100',
         title:'Veg meals',
         quantity:'1 Serve',
@@ -139,7 +137,7 @@ const Food=[
     },
         {
             id:2.1,
-            url:'http://localhost:3000/image/italifood-1.jpg',
+            url:require("../component/Dashboard/image/Italifood-1.jpg"),
             rate:'300',
             title:'Spaghetti',
             quantity:'2 pieces',
@@ -150,7 +148,7 @@ const Food=[
         },
         {
             id:2.2,
-            url:'http://localhost:3000/image/italifood-2.jpg',
+            url:require("../component/Dashboard/image/italifood-2.jpg"),
             rate:'250',
             title:'Lasagna',
             quantity:'1 Serve',
@@ -159,7 +157,7 @@ const Food=[
             titleId:2,
             description:'Lasagna is a flat and expanded pasta sheet, traditionally made in Italy with Parmigiano-Reggiano (Parmesan cheese), Béchamel sauce (white sauce), and ragù (a meat-based sauce).'},
         {id:2.3,
-            url:'http://localhost:3000/image/italifood-3.jpg',
+            url:require("../component/Dashboard/image/italifood-3.jpg"),
             rate:'500',
             title:' Risotto milanese',
             quantity:'1 serve',
@@ -168,7 +166,7 @@ const Food=[
             titleId:2,
             description:'A classic risotto is a rich, creamy dish with nearly a porridge-like consistency, yet each grain of rice retains a distinct bite. In Italian risotto, the rice is parched as in the pilaf method, but the liquid is added and absorbed gradually while the grain is stirred almost constantly.'},
         {id:2.4,
-                url:'http://localhost:3000/image/italifood-4.jpg',
+            url:require("../component/Dashboard/image/italifood-4.jpg"),
                 rate:'700',
                 title:'Ratatouille',
                 quantity:'2 serve',
@@ -177,7 +175,7 @@ const Food=[
                 titleId:2,
                 description:'Traditional French Ratatouille is an easy French side dish that consists of stewed vegetables: eggplant, zucchini, onions, yellow squash, bell peppers garlic, fresh tomatoes and herbs.'},
         {id:2.5,
-                 url:'http://localhost:3000/image/italifood-5.jpg',
+            url:require("../component/Dashboard/image/italifood-5.jpg"),
                 rate:'200',
                 title:'Tiramisu',
                 quantity:'1 serve',
@@ -186,7 +184,7 @@ const Food=[
                 titleId:2,
                 description:'Tiramisù is a velvety mélange of savoiardi cookies dipped in an espresso, layered with delicately sweetened whipped eggs and mascarpone cheese, and topped with a dusting of cocoa powder.'},
         {id:2.6,
-                url:'http://localhost:3000/image/italifood-6.jpg',
+            url:require("../component/Dashboard/image/italifood-6.jpg"),
                 rate:'439',
                 title:'Frittata',
                 quantity:'2 serve',
@@ -195,7 +193,7 @@ const Food=[
                 titleId:2,
             description:'Frittata is an egg-based Italian dish similar to an omelette or crustless quiche or scrambled eggs, enriched with additional ingredients such as meats, cheeses, or vegetables. The word frittata is Italian and roughly translates to "fried".'},
             {id:2.7,
-                url:'http://localhost:3000/image/italifood-7.png',
+                url:require("../component/Dashboard/image/Italifood-7.png"),
                 rate:'639',
                 title:'Foccacia',
                 quantity:'1 piece',
@@ -204,7 +202,7 @@ const Food=[
                 titleId:2,
             description:'Focaccia is made from flour, oil, water, yeast, and salt, like pizza dough. However, it has more yeast than pizza dough, which allows it to rise more and make a fluffier, bread-like loaf. People love focaccia because of its smooth texture and taste.'},
             {id:2.8,
-                url:'http://localhost:3000/image/italifood-8.jpg',
+                url:require("../component/Dashboard/image/italifood-8.jpg"),
                 rate:'239',
                 title:'Pizza',
                 quantity:'1 serve',
@@ -216,7 +214,7 @@ const Food=[
 
             {
                 id:3.1,
-                url:'http://localhost:3000/image/kor-1.jpg',
+                url:require("../component/Dashboard/image/kor-1.jpg"),
                 rate:'250',
                 title:'Tteokbokki',
                 quantity:'1 Serve',
@@ -228,7 +226,7 @@ const Food=[
             },
             {
                 id:3.2,
-                url:'http://localhost:3000/image/kor-2.jpg',
+                url:require("../component/Dashboard/image/kor-2.jpg"),
                 rate:'400',
                 title:'Sundubu jjigae',
                 quantity:'1 Serve',
@@ -239,7 +237,7 @@ const Food=[
             },
             {
                 id:3.3,
-                url:'http://localhost:3000/image/kor-3.jpg',
+                url:require("../component/Dashboard/image/kor-3.jpg"),
                 rate:'450',
                 title:'Jjin-mandu',
                 quantity:'1 Serve',
@@ -250,7 +248,7 @@ const Food=[
             },
             {
                 id:3.4,
-                url:'http://localhost:3000/image/kor-4.jpg',
+                url:require("../component/Dashboard/image/kor-4.jpg"),
                 rate:'400',
                 title:'Kimchi fried rice',
                 quantity:'1 Serve',
@@ -261,7 +259,7 @@ const Food=[
             },
             {
                 id:3.5,
-                url:'http://localhost:3000/image/kor-5.jpg',
+                url:require("../component/Dashboard/image/kor-5.jpg"),
                 rate:'450',
                 title:'Kimbap',
                 quantity:'5 pieces',
@@ -272,7 +270,7 @@ const Food=[
             },
             {
                 id:3.6,
-                url:'http://localhost:3000/image/kor-6.png',
+                url:require("../component/Dashboard/image/kor-6.png"),
                 rate:'150',
                 title:'Hobakjuk',
                 quantity:'1 Serve',
@@ -283,7 +281,7 @@ const Food=[
             },
             {
                 id:3.7,
-                url:'http://localhost:3000/image/kor-7.jpg',
+                url:require("../component/Dashboard/image/kor-7.jpg"),
                 rate:'380',
                 title:'Korean fried chicken',
                 quantity:'1 Serve',

@@ -44,7 +44,7 @@ function Indianfood(){
             {  
                 Food1.map((ele)=>{
                     return <>
-                     <div key={ele.id} className='Perslide'>
+                     <div key={ele.id} className='Perslide' >
                     <img src={ele.url} alt={ele.title} onClick={()=>detail(ele.id)}></img>
                     <p>{ele.title}{' '}[{ele.quantity}] </p>
                     <span style={{display:'block'}}>₹{ele.rate}</span>

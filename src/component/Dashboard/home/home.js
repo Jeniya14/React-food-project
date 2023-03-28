@@ -18,11 +18,10 @@ function Home(){
         dispatch(getTotals())
     },[cart,dispatch])
     const slides=[
-        {url:'http://localhost:3000/image/slide1.jpg',title:'slide1'},
-        {url:'http://localhost:3000/image/slide2.jpg',title:'slide2'},
-        {url:'http://localhost:3000/image/slide4.jpg',title:'slide3'}
+        { url:require("../image/slide1.jpg"),title:'slide1'},
+        { url:require("../image/slide2.jpg"),title:'slide2'},
+        { url:require("../image/slide3.jpg"),title:'slide3'}
     ]
-
     return(
         <div className="home">
             <Header/>
