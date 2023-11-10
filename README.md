@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Food Ordering Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Food Ordering Website project! This is a mini project created with React.js, Redux,Html and CSS for ordering food online. The website includes features such as user authentication, a home page with a menu, category pages, detailed food pages, a user profile, and a shopping cart.
 
-## Available Scripts
+## Screenshots
 
-In the project directory, you can run:
+### Login Page
+![Login Page](screenshots/screenshot0.png)
 
-### `npm start`
+### Register Page
+![Register Page](screenshots/screenshot01.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Home Page
+![Home Page](screenshots/screenshot1.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Home Page](screenshots/screenshot2.png)
 
-### `npm test`
+![Home Page](screenshots/screenshot3.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Home Page](screenshots/screenshot4.png)
 
-### `npm run build`
+### Category Page
+![Category Page](screenshots/screenshot5.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Single Food Page
+![Single Food Page](screenshots/screnshot6.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Profile Page
+![Profile Page](screenshots/screenshot7.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Cart Page
+![Cart Page](screenshots/screenshot8.png)
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **User Authentication**: Users can register and log in with validation. User data is stored in local storage for simplicity in this mini project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Home Page**: The home page includes a top menu, an image slider for ads, and categories of food.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Category Page**: Each category has its own page with a list of foods related to that category.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Single Food Page**: Clicking on a food item in a category navigates the user to a detailed page about that specific food.
 
-## Learn More
+- **Profile Page**: Users have a profile page where they can view and edit their personal information.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Cart Page (Redux)**: The cart page is implemented with Redux, allowing users to perform the following actions:
+  - Add items to the cart
+  - Delete items from the cart
+  - Clear the entire cart
+  - Adjust item quantities with a responsive total
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+- React.js
+- Redux
+- Html
+- CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
